@@ -13,8 +13,37 @@ body {
 }
 
 #search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  font-size: 20px;
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#search-box:focus {
+  border: 3px solid #555;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.list__img {
+  width: 35;
+  height: auto;
+}
+
+.card__img {
+  height: 35;
+  width: auto;
+}
+h2 {
+  display: flex;
+  gap: 5px;
+}
+.list__item:not(:last-child) {
+  padding-bottom: 12px;
 }
